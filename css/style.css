@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+h4 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Common Button  start*/
+
+.btn-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 8px 60px;
+  display: flex;
+  background: #fff;
+  color: #e2136e;
+  /* position: absolute; */
+  align-items: center;
+  border: solid 2px #e2136e;
+  box-shadow: 0px 8px 15px rgb(226, 19, 109) (0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  border-radius: 50px;
+  /* letter-spacing: 0.3em; */
+  /* padding-left: 40px; */
+  cursor: pointer;
+  outline: none;
+}
+
+.button .b {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #e2136e;
+  box-shadow: 0px 15px 20px rgba(229, 46, 159, 0.4);
+  color: #fff;
+  border: solid 2px #fff;
+  transform: translateY(-7px);
+}
+
+.button:hover > .b {
+  animation: letterroll cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.b {
+  animation: backroll cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+/* .btn-div {
+  width: 60px;
+  height: 2px;
+  background: #e2136e;
+  margin-left: 220px;
+  position: absolute;
+  transition: 0.5s;
+} */
+
+@keyframes letterroll {
+  50% {
+    transform: translateY(-75%);
+    opacity: 0;
+  }
+  50.1% {
+    transform: translateY(75%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes backroll {
+  50% {
+    transform: translateY(75%);
+  }
+  50.1% {
+    transform: translateY(-75%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+#butn {
+  visibility: hidden;
+  margin-top: 15px;
+}
+
+/*====== Nav bar part Start===== */
+
+/*========= Nav bar part End======== */
+
+/*======= Banner Part Start======== */
+
+.banner-text {
+  margin-top: 40px;
+}
+
+/*======= Banner Part End ======== */
+
+/* ======Solution Platrrom Start====== */
+.solution {
+  background-color: #ffeff6;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.solution-wrapper,
+.cards,
+img {
+  height: 150px;
+  width: 150px;
+}
+/* ======Solution Platrrom End====== */
