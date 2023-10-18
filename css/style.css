@@ -184,6 +184,7 @@ h4 {
   border-radius: 50px;
   cursor: pointer;
   outline: none;
+  transition: box-shadow 0.3s;
 }
 
 .button .b {
@@ -304,8 +305,11 @@ h4 {
   height: 60px;
 }
 
+.pay-bill {
+  width: 80px;
+}
+
 .ban-service {
-  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -313,32 +317,41 @@ h4 {
 
 .service-items {
   display: flex;
+}
+
+.service-items-p {
+  transition: color 300ms;
+}
+
+/* .ticket:hover {
+  background-color: #fff;
+} */
+
+.ticket:hover* {
+  color: #d12053;
+}
+
+.ticket {
+  padding: 0 8px;
+  display: grid;
+  grid-template-columns: 80px auto;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   border: 1px solid #fff;
   border-radius: 20px;
-  transition: all linear 0.3s;
+  transition: background-color 300ms;
 }
 
-.service-items:hover {
-  box-shadow: rgba(243, 240, 240, 0.45) 0px 25px 20px -20px;
-}
-
-/* .ban-box {
-  align-items: center;
+.left {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  transition: all linear 0.4s;
-} */
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
 
-/* .ban-box:hover {
-  background-color: #fff;
-  border: 2px solid #f0d116;
-  box-shadow: -10px 18px 70px -24px rgba(247, 244, 245, 0.75);
-  -webkit-box-shadow: -10px 18px 70px -24px rgba(251, 248, 249, 0.75);
-  -moz-box-shadow: -10px 18px 70px -24px rgba(246, 244, 245, 0.75);
+/* .left:hover {
+  color: #d12053;
 } */
 
 .ban-logo {
@@ -362,11 +375,12 @@ h4 {
 } */
 
 .service-items-p {
-  font-size: 18px;
+  font-size: 1.313em;
   font-weight: 500;
   color: #fff;
+  margin: auto;
+  padding-left: 10px;
 }
-
 .ban-img {
   margin: 0;
   padding: 0;
