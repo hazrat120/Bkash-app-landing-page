@@ -1,0 +1,102 @@
+/* ==============================Extra Small Device============================== */
+@media(max-width:575.98px){
+	.navbar-toggler:focus {
+        box-shadow:none;
+    }
+    #setting{
+        color: #fff;
+    }
+    .top-nav-logo{
+        width: 90px;
+    }
+    .navbar-nav .nav-link {
+        margin-top: -8px;
+        text-align: center;
+    }
+    .nav-link i {
+       display: none;
+    }
+    .btn-outline-success {
+        text-align: center;
+        margin: 0 auto; 
+    }
+    #navbar-main {
+        padding: 10px 0 24px 0;
+    }    
+}
+/* ============================== Small Device============================== */
+@media(min-width:576px) and (max-width:767.98px){
+    .navbar-toggler:focus {
+        box-shadow:none;
+    }
+    #setting{
+        color: #fff;
+    }
+    .top-nav-logo{
+        width: 90px;
+    }
+    .navbar-nav .nav-link {
+        margin-top: -8px;
+        text-align: center;
+    }
+    .nav-link i {
+       display: none;
+    }
+    .btn-outline-success {
+        text-align: center;
+        margin: 0 auto; 
+    }
+    #navbar-main {
+        padding: 10px 0 24px 0;
+    }    
+}
+/* ==============================Medium Device============================== */
+@media(min-width:768px) and (max-width:991.98px){
+    .navbar-toggler:focus {
+        box-shadow:none;
+    }
+    #setting{
+        color: #fff;
+    }
+    .top-nav-logo{
+        width: 90px;
+    }
+    .navbar-nav .nav-link {
+        margin-top: -8px;
+        text-align: center;
+    }
+    .nav-link i {
+       display: none;
+    }
+    .btn-outline-success {
+        text-align: center;
+        margin: 0 auto; 
+    }
+    #navbar-main {
+        padding: 10px 0 24px 0;
+    }    
+}
+/* ==============================Large Device============================== */
+@media(min-width:992px) and (max-width:1199.98px){
+    .nav-link {       
+        font-size: 14px !important;
+        margin-left: 15px !important;       
+    }
+    .btn-outline-success {
+        font-size: 14px !important;  
+    }
+    .top-nav-logo{
+        width: 100px;
+    }
+    .navbar-toggler:focus {
+        box-shadow:none !important;
+    }
+}
+/* ==============================Extra Large Device============================== */
+@media(min-width:1200px) and (max-width:1399.98px){
+
+}
+/* ==============================Extra Extra Large Device============================== */
+@media(min-width:1400px){
+
+}
