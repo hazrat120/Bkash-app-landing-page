@@ -407,7 +407,7 @@ h4 {
   }
 
   50% {
-    top: 60px;
+    top: 50px;
   }
 
   100% {
@@ -418,18 +418,32 @@ h4 {
 .banner-border img {
   position: absolute;
   left: 0;
-  top: 490px;
+  top: 478px;
   width: 100%;
   overflow: hidden;
 }
 
 /*=====Image gallery=========*/
-.img-show {
-  background-color: #fff0f7;
+.img-gal {
+  background-color: #e4b7cc;
   padding: 50px 0;
 }
 
-.gal-d-items {
-  margin: 0 auto;
-  align-items: center;
+.img-gall-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 30px;
+}
+.crd-zoom {
+  transition: transform 0.2s;
+}
+
+.crd-zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+  -webkit-box-shadow: -5px 14px 41px 3px rgba(74, 76, 99, 0.84);
+  -moz-box-shadow: -5px 14px 41px 3px rgba(74, 76, 99, 0.84);
+  box-shadow: -5px 14px 41px 3px rgba(74, 76, 99, 0.84);
 }
