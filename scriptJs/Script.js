@@ -28,9 +28,9 @@
 //   document.getElementById("butn").style.visibility = "visible";
 // }, 500);
 
-$(function () {
-  lightbox.option({
-    resizeDuration: 200,
-    wrapAround: true,
-  });
-});
+// $(function () {
+//   lightbox.option({
+//     resizeDuration: 200,
+//     wrapAround: true,
+//   });
+// });

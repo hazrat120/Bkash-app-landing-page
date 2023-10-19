@@ -176,16 +176,15 @@ h4 {
 .button {
   padding: 8px 60px;
   display: flex;
-  background: #e2136e;
-  color: #fff;
+  background: #fff;
+  color: #e2136e;
   align-items: center;
   border: solid 2px #e2136e;
   box-shadow: 0px 8px 15px rgb(226, 19, 109) (0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  transition: box-shadow 0.3s;
 }
 
 .button .b {
@@ -194,12 +193,11 @@ h4 {
 }
 
 .button:hover {
-  background-color: #fff;
+  background-color: #e2136e;
   box-shadow: 0px 15px 20px rgba(229, 46, 159, 0.4);
-  color: #e2136e;
+  color: #fff;
   border: solid 2px #fff;
   transform: translateY(-7px);
-  transition: all linear 0.3s;
 }
 
 .button:hover > .b {
@@ -477,4 +475,110 @@ h4 {
   color: #d12053;
   font-size: 16px;
   margin-right: 8px;
+}
+
+/* ========How it work ====== */
+
+.how-work {
+  padding: 30px 0;
+  background-color: #e2136e;
+}
+
+.container-box {
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.how-work-head-text {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.how-work-head-text h2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 45px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.apps-3-step > i {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #e2136e;
+  margin: 0 auto;
+  font-size: 35px;
+  color: #fff;
+  transition: all linear 0.4s;
+}
+
+.apps-3-step > i:hover {
+  background-color: #d3bbc6;
+  color: #e2136e;
+  cursor: pointer;
+}
+
+.apps-3-step h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.app-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  transition: all linear 0.4s;
+  margin-bottom: 1rem;
+}
+
+.app-down > i {
+  color: #d12053;
+}
+
+.apps-3-step-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-digit-step {
+  width: 40px;
+  height: 40px;
+  border: 1px dashed #d12053;
+  color: #d12053;
+  text-align: center;
+  line-height: 38px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  margin-top: 30px;
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.app-btn {
+  width: 225px;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.app-link {
+  color: #e2136e;
+  transition: all linear 0.4s;
+}
+
+.app-btn:hover * {
+  color: #fff;
 }
