@@ -582,3 +582,10 @@ h4 {
 .app-btn:hover * {
   color: #fff;
 }
+
+/* ======Ad  Section video======*/
+
+.ad-video {
+  padding-top: 30px;
+  background-color: #e2136e;
+}
