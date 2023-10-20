@@ -594,98 +594,84 @@ h4 {
   height: 400px;
 }
 
-.video-wrapper {
-  position: relative;
-}
-
-/* .play-btn {
+.wrapper {
+  display: inline-block;
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #e2136e;
-  padding-top: 200px;
-  left: 50%;
   top: 50%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
-} */
-.mark-col {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-main {
   position: relative;
+  display: inline-block;
 }
 
-.input {
-  opacity: 0;
+.video {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  background: #e2136e;
+  z-index: 999;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+.fa-play:before {
+  content: "\f04b";
+}
+
+.waves {
   position: absolute;
-  pointer-events: none;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+  -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
 }
 
-label {
-  display: grid;
-  border: none;
-  background-color: #e2136e;
-  --w: 200px;
-  width: var(--w);
-  height: var(--w);
-  border-radius: 50%;
-  place-items: center;
-  cursor: pointer;
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
-.play_pause_icon {
-  --w: 50%;
-  width: var(--w);
-  height: var(--w);
-  background: rgb(44, 30, 30);
-  translate: 0 0;
-  transition: all 0.2s ease-in-out;
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
-.play {
-  clip-path: polygon(
-    20% 0,
-    20% 100%,
-    90% 50%,
-    90% 50%,
-    90% 50%,
-    90% 50%,
-    90% 50%,
-    90% 50%,
-    90% 50%
-  );
-  translate: 6% 0;
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
-
-.container:has(input:checked) .play_pause_icon,
-.pause {
-  clip-path: polygon(
-    0 0,
-    0 100%,
-    33.33% 100%,
-    33.33% 0,
-    66.66% 0,
-    100% 0,
-    100% 100%,
-    66.66% 100%,
-    66.66% 0
-  );
-  translate: 0 0;
-}
-
-.play-2 {
-  clip-path: polygon(
-    20% 0,
-    20% 100%,
-    35% 90%,
-    35% 90%,
-    35% 90%,
-    90% 50%,
-    35% 10%,
-    35% 10%,
-    35% 10%
-  );
-  translate: 6% 0;
-}
-
 /* Customar Reviewe Section */
 .reviewe {
   padding: 50px 0;

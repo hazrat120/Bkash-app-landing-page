@@ -34,6 +34,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/slick.css" />
@@ -375,15 +387,23 @@
     <!-- Video Markating Section-->
     <section id="markating" class="markating">
       <div class="row">
-        <div class="col-xl-12 m-auto mark-col">
-          <div class="video-wrapper checkbox">
-            <a
-              class="my-video-links play_pause_icon play"
-              data-autoplay="true"
-              data-vbtype="video"
-              href="https://youtu.be/XIkvTKXL2bo"
-              ><div class="play-btn"></div
-            ></a>
+        <div class="col-xl-12">
+          <div class="wrapper">
+            <div class="video-main">
+              <div class="promo-video">
+                <div class="waves-block">
+                  <div class="waves wave-1"></div>
+                  <div class="waves wave-2"></div>
+                  <div class="waves wave-3"></div>
+                </div>
+              </div>
+              <a
+                href="https://youtu.be/XIkvTKXL2bo?si=wjuwCqLhmU8iQgGj"
+                class="video video-popup mfp-iframe"
+                data-lity
+                ><i class="fa fa-play"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -460,10 +480,18 @@
     <!-- AOS script link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.0.4/venobox.min.js"
+      integrity="sha512-KX9LF4BMXOG6qr9aGjFIPK1xysZAHWXpuZW6gnRi6oM+41qa8x4zaLPkckNxz5veoSWzmV5HZqPMMtknU+431g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
       AOS.init();
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Slick wrider -->
     <script src="./scriptJs/lightbox.min.js"></script>
     <script src="./scriptJs/slick.min.js"></script>
