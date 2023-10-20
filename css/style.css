@@ -55,6 +55,9 @@ body {
   -moz-font-feature-settings: "liga" on;
   font-family: var(--font-1);
   font-weight: var(--regular);
+  font-family: "DM Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 a {
@@ -150,11 +153,11 @@ h4 {
   background: rgb(231, 196, 227);
 }
 .common-heading {
-  text-align: center;
+  text-align: start;
   font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
-  padding: 60px;
+  padding: 60px 0 30px 0;
 }
 
 .applink {
@@ -587,7 +590,7 @@ h4 {
 
 .markating {
   position: relative;
-  background: url("../images/attachment.jpg") 50% 50% fixed;
+  background: url("../images/video-img.png") 50% 50% fixed;
   z-index: 99;
   padding: 40px 0;
   width: 100%;
@@ -647,7 +650,7 @@ h4 {
   position: absolute;
   width: 150px;
   height: 150px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(240, 237, 237, 0.3);
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   border-radius: 100%;
@@ -720,6 +723,7 @@ h4 {
   justify-content: center;
   gap: 10px;
   line-height: 0;
+  margin-top: 15px;
 }
 
 .count-up {
@@ -737,7 +741,134 @@ h4 {
 
 .reve-icon-text p {
   margin: 0 auto;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 500;
-  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* ====Footer Section==== */
+#footer {
+  padding: 50px;
+  background: #1f2128;
+}
+
+.qrcode-bikash {
+  top: 22px;
+  left: 50%;
+}
+.footer-detail p {
+  padding-top: 22px;
+  font-size: 14px;
+  color: #ffff;
+  font-weight: 500;
+  width: 330px;
+}
+.footer-detail-infor a {
+  padding-top: 22px;
+  font-size: 18px;
+  color: #ffff;
+  font-weight: 500;
+  transition: all linear 0.3s;
+  position: relative;
+}
+.footer-detail-infor a:hover {
+  color: #e2136e;
+}
+.footer-detail-infor a i {
+  position: absolute;
+  content: "";
+  font-size: 18px;
+  color: #e2136e;
+  top: 27px;
+  right: -50%;
+  transform: translateX(50%);
+}
+.social ul li a {
+  font-size: 15px;
+  padding: 8px 18px;
+  text-align: center;
+  background: #fff;
+  color: #0e1133;
+  border-radius: 6px;
+  line-height: 36px;
+  margin-right: 5px;
+  transition: all linear 0.3s;
+}
+.social ul li a:hover {
+  background: #e2136e;
+}
+.social ul {
+  display: flex;
+  padding-top: 22px;
+  text-align: center;
+  padding-left: 0;
+}
+.common-heading h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+.menu-info ul {
+  padding-left: 0;
+  padding-top: 15px;
+}
+.menu-info ul li {
+  padding-bottom: 12px;
+}
+.menu-info ul li a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 150%;
+}
+.menu-info .footer-contact {
+  font-size: 15px;
+  color: #e2136e;
+  font-weight: 500;
+  line-height: 150%;
+}
+.menu-info .footer-contact i {
+  margin-right: 8px;
+}
+#address-info {
+  font-size: 16px;
+  color: #fff;
+}
+.footer-div {
+  width: 100%;
+  height: 1px;
+  background: #e2136e;
+}
+.footer-copyright {
+  padding-top: 40px;
+  padding-left: 0;
+}
+.apps-download-btn ul {
+  display: flex;
+  padding-left: 0;
+  column-gap: 15px;
+}
+.apps-download-btn ul li a {
+  background: #fff;
+  color: #0e1133;
+  line-height: 40px;
+  padding: 10px 23px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  transition: all linear 0.3s;
+}
+.apps-download-btn ul li a:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.copyright-text p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+.copyright-text {
+  text-align: end;
+  padding-top: 40px;
 }
