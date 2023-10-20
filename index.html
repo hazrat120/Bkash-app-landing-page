@@ -375,17 +375,70 @@
     <!-- Video Markating Section-->
     <section id="markating" class="markating">
       <div class="row">
-        <div class="col-xl-12">
-          <div class="ad-video">
-            <iframe
-              width="100%"
-              height="600px"
-              src="https://www.youtube.com/embed/XIkvTKXL2bo?si=sJqWPD8-h-z8eA1t"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+        <div class="col-xl-12 m-auto mark-col">
+          <div class="video-wrapper checkbox">
+            <a
+              class="my-video-links play_pause_icon play"
+              data-autoplay="true"
+              data-vbtype="video"
+              href="https://youtu.be/XIkvTKXL2bo"
+              ><div class="play-btn"></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coustomar reviewe section -->
+    <section class="reviewe" id="reviewe">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="text-count-up">
+              <div class="icon-box">
+                <i class="fa-solid fa-down-long rev-icon"></i>
+              </div>
+              <h5>ডাউনলোড</h5>
+              <div class="count-content">
+                <h3 class="count-up" data-count="60000"></h3>
+                <span class="reve-icon-text"
+                  >মিলিয়ন
+                  <p>+</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="text-count-up">
+              <div class="icon-box">
+                <i class="fa-regular fa-star rev-icon"></i>
+              </div>
+              <h5>রিভিউ</h5>
+              <div class="count-content">
+                <h3 class="count-up" data-count="10000"></h3>
+                <span class="reve-icon-text"
+                  >মিলিয়ন
+                  <p>+</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4">
+            <div class="text-count-up">
+              <div class="icon-box">
+                <i class="fa-regular fa-user rev-icon"></i>
+              </div>
+              <h5>গ্রাহক</h5>
+              <div class="count-content">
+                <h3 class="count-up" data-count="70000"></h3>
+                <span class="reve-icon-text"
+                  >মিলিয়ন
+                  <p>+</p>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -406,9 +459,11 @@
     ></script>
     <!-- AOS script link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
+
     <!-- Slick wrider -->
     <script src="./scriptJs/lightbox.min.js"></script>
     <script src="./scriptJs/slick.min.js"></script>
