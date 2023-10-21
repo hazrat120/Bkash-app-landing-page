@@ -1,47 +1,8 @@
-@font-face {
-  font-family: "Shurjo";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff2)
-      format("woff2"),
-    url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff)
-      format("woff"),
-    url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.ttf)
-      format("truetype");
-}
-@font-face {
-  font-family: "Shurjo";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_700_v2.woff2)
-      format("woff2"),
-    url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.woff)
-      format("woff"),
-    url(https://assets.prothomalo.com/prothomalo/assets/ShurjoWeb_400_v2.ttf)
-      format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxM.woff)
-      format("woff");
-}
-
 :root {
-  --ratio: 1.112;
-  --fallback: "SolaimanLipi", "Siyam Rupali", "Roboto", "Arial", "Helvetica",
-    "Monospace";
-  --font-1: "Shurjo", var(--fallback);
-  --font-2: "Shurjo", var(--fallback);
-  --font-3: "Roboto", var(--fallback);
+  --praimare: #ee1172;
+  --secondary: #fff;
+  --tersiary: #f5d116;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -49,16 +10,12 @@
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-  font-family: var(--font-1);
-  font-weight: var(--regular);
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul,
@@ -68,25 +25,16 @@ ol {
 
 p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
-h2 {
-  font-weight: 600;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
-
-h3 {
-  font-weight: 400;
-}
-
-h4 {
-  font-weight: 600;
-}
-
-/* .container {
-  width: 1260px;
-} */
-/* Common Button  start*/
 
 /*======== Nav Bar start ========== */
 #nav-sec {
@@ -94,29 +42,11 @@ h4 {
   z-index: 9999;
   width: 100%;
   padding: 5px 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
-.nav-sec {
-  background-color: #e2136e;
-}
-
-.navbar-toggler:focus {
-  box-shadow: -1 !important;
-}
-
-.btn {
-  border: none;
-  padding: 0.25rem 1.875rem;
-}
-
-.btn-outline-success {
-  color: #e2136e !important;
-  font-size: 18px;
-  font-weight: 700;
-  background: #ffffff;
-  border-radius: 30px;
-  border: 2px solid #ffffff !important;
-}
 #navbar-main {
   background-color: #e2136e;
   padding: 0;
@@ -127,11 +57,14 @@ h4 {
   transform: translateX(-50%);
   border-radius: 50px;
 }
-.btn-outline-success:hover {
-  background: #f0d116 !important;
-  color: #ffffff !important;
-  border: 2px solid #fff !important;
+.nav-sec {
+  background-color: #e2136e;
 }
+
+.navbar-toggler:focus {
+  box-shadow: -1 !important;
+}
+
 .nav-link {
   color: #ffffff;
   font-size: 18px;
@@ -141,6 +74,7 @@ h4 {
   transition: all linear 0.3s;
   position: relative;
 }
+
 .nav-link i {
   position: absolute;
   content: "";
@@ -148,6 +82,7 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .nav-link:hover {
   color: #ffffff;
 }
@@ -172,7 +107,7 @@ h4 {
 .applink:hover {
   color: #fff;
 }
-/*======== Nav Bar End ========== */
+/*======== b ========== */
 .banners {
   padding-top: 40px;
 }
@@ -183,7 +118,7 @@ h4 {
 }
 
 .button {
-  padding: 8px 60px;
+  padding: 10px 30px;
   display: flex;
   background: #fff;
   color: #e2136e;
@@ -383,10 +318,6 @@ h4 {
   font-size: 1.5rem;
 }
 
-/* .left:hover {
-  color: #d12053;
-} */
-
 .ban-logo {
   width: 80px;
   height: 80px;
@@ -402,10 +333,6 @@ h4 {
   font-weight: 500;
   padding-bottom: 5px;
 }
-
-/* .ban-box a:hover {
-  color: #e2136e;
-} */
 
 .service-items-p {
   font-size: 1.313em;
@@ -487,7 +414,7 @@ h4 {
   box-shadow: -5px 14px 41px 3px rgba(74, 76, 99, 0.84);
 }
 
-/* Transsection Section Start */
+/* =====Transsection Part Start====== */
 
 .transection {
   background-color: #e4b7cc;
@@ -536,23 +463,12 @@ h4 {
   animation: mukpu-tran 18s infinite;
 }
 
-@keyframes mukpu-tran {
-  0% {
-    left: 0;
-  }
-
-  50% {
-    left: 280px;
-  }
-
-  100% {
-    left: 0;
-  }
-}
 .trans-mukup-2 {
-  margin-top: 221px;
-  margin-left: 80px;
+  transform: rotate(-72deg);
+  margin-top: 121px;
+  margin-left: 130px;
 }
+
 /* ========How it work ====== */
 
 .how-work {
@@ -585,15 +501,15 @@ h4 {
 }
 
 .apps-3-step > i {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: #e2136e;
   margin: 0 auto;
-  font-size: 35px;
+  font-size: 30px;
   color: #fff;
   transition: all linear 0.4s;
 }
@@ -631,6 +547,10 @@ h4 {
   justify-content: center;
 }
 
+.how-work-text:hover {
+  color: var(--praimare);
+}
+
 .app-digit-step {
   width: 40px;
   height: 40px;
@@ -647,25 +567,42 @@ h4 {
   font-weight: 600;
 }
 
+.app-digit-step::after {
+  content: "";
+  position: absolute;
+  left: calc(50% + 45px);
+  bottom: 20px;
+  width: calc(100% - 60px);
+  height: 1px;
+  border-bottom: 1px dashed var(--praimare);
+  color: var(--praimare);
+}
+
 .app-btn {
-  width: 225px;
-  height: 50px;
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 30px;
+}
+
+.app-button {
+  width: 180px;
+  height: 50px;
 }
 
 .app-link {
   color: #e2136e;
   transition: all linear 0.4s;
+  font-weight: 600;
 }
 
 .app-btn:hover * {
   color: #fff;
 }
 
-/* ======Ad  Section video======*/
+/* ======Ad or markating Part video======*/
 
-.markating {
+.video-marketing {
   position: relative;
   background: url("../images/video-img.png") 50% 50% fixed;
   z-index: 99;
@@ -675,7 +612,10 @@ h4 {
 }
 
 .wrapper {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -685,6 +625,7 @@ h4 {
 .video-main {
   position: relative;
   display: inline-block;
+  margin: 30px 0 30px 0;
 }
 
 .video {
@@ -752,15 +693,24 @@ h4 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* Conline Reviewe Section */
-.reviewe {
+
+.markating-h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+/* Nnline Reviewe Section */
+.online-reviewe {
   padding: 50px 0;
   background-color: #e4b7cc;
 }
 
 .icon-box {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: #e2136e;
   align-items: center;
   margin: 0 auto;
@@ -768,7 +718,7 @@ h4 {
   justify-content: center;
   border: 2px solid #fff;
   border-radius: 20px;
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   transition: all linear 0.3s;
 }
@@ -780,7 +730,7 @@ h4 {
 }
 
 .text-count-up h5 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 0;
@@ -812,21 +762,21 @@ h4 {
 
 .count-up,
 .reve-icon-text {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .reve-icon-text p {
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 44px;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-left: 0;
 }
 
 /*===== Customer Review Section=== */
 
-.cusmer-reviewe {
+.customer-reviewe {
   padding: 40px 0;
   background-color: #d3bbc6;
 }
@@ -868,8 +818,9 @@ h4 {
   top: 20px;
   left: -50px;
 }
+
 .customer-review-head p {
-  width: 50%;
+  width: 70%;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
@@ -888,7 +839,7 @@ h4 {
 .rev-0 {
   height: 100%;
   width: 100%;
-  padding: 50px;
+  padding: 50px 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -909,11 +860,11 @@ h4 {
   font-size: 25px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .rev-0 p {
@@ -935,10 +886,11 @@ h4 {
 }
 .footer-detail p {
   padding-top: 22px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffff;
-  font-weight: 500;
+  font-weight: 400;
   width: 330px;
+  text-align: start;
 }
 .footer-detail-infor a {
   padding-top: 22px;
@@ -999,7 +951,7 @@ h4 {
   line-height: 150%;
 }
 .menu-info .footer-contact {
-  font-size: 15px;
+  font-size: 14px;
   color: #e2136e;
   font-weight: 500;
   line-height: 150%;
