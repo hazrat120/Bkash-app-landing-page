@@ -850,20 +850,30 @@ h4 {
 .customer-review-head h3::after {
   position: absolute;
   content: "";
-  width: 60px;
+  width: 80px;
   height: 3px;
   background-color: #e2136e;
-  left: 50%;
   transform: translateX(-50%);
-  top: 50px;
+  top: 20px;
+  right: -130px;
 }
 
+.customer-review-head h3::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #e2136e;
+  transform: translateX(-50%);
+  top: 20px;
+  left: -50px;
+}
 .customer-review-head p {
   width: 50%;
   font-size: 1rem;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   align-items: center;
 }
 
