@@ -64,3 +64,15 @@ $(".count-up").each(function () {
     }
   );
 });
+
+// Auto play user review
+$(".autoplay").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  infinite: true,
+  speed: 500,
+  autoplaySpeed: 2000,
+  arrows: false,
+  responsive: true,
+});

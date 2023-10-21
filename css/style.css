@@ -556,7 +556,7 @@ h4 {
 /* ========How it work ====== */
 
 .how-work {
-  padding: 0px 0;
+  padding: 30px 0;
   background-color: #e2136e;
 }
 
@@ -752,7 +752,7 @@ h4 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* Customar Reviewe Section */
+/* Conline Reviewe Section */
 .reviewe {
   padding: 50px 0;
   background-color: #e4b7cc;
@@ -822,6 +822,95 @@ h4 {
   font-weight: 500;
   margin-right: 10px;
   margin-left: 0;
+}
+
+/*===== Customer Review Section=== */
+
+.cusmer-reviewe {
+  padding: 40px 0;
+  background-color: #d3bbc6;
+}
+
+.customer-review-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.customer-review-head h3 {
+  position: relative;
+  font-size: 50px;
+  line-height: 0.8;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 40px;
+}
+
+.customer-review-head h3::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #e2136e;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+}
+
+.customer-review-head p {
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.custo-rev {
+  width: 700px;
+  height: 400px;
+  background-color: #e2136e;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.rev-0 {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.rev-0 img {
+  border: 2px solid #fff;
+  padding: 3px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.rev-0 h6 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.rev-0 p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 
 /* ====Footer Section==== */
