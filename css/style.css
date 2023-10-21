@@ -838,7 +838,7 @@ h4 {
   flex-direction: column;
 }
 
-.customer-review-head h3 {
+.customer-review-head-h3 {
   position: relative;
   font-size: 50px;
   line-height: 0.8;
@@ -850,7 +850,7 @@ h4 {
 .customer-review-head h3::after {
   position: absolute;
   content: "";
-  width: 80px;
+  width: 70px;
   height: 3px;
   background-color: #e2136e;
   transform: translateX(-50%);
@@ -861,7 +861,7 @@ h4 {
 .customer-review-head h3::before {
   position: absolute;
   content: "";
-  width: 80px;
+  width: 70px;
   height: 3px;
   background-color: #e2136e;
   transform: translateX(-50%);
@@ -925,7 +925,7 @@ h4 {
 
 /* ====Footer Section==== */
 #footer {
-  padding: 50px;
+  padding: 50px 0 20px 0;
   background: #1f2128;
 }
 
